@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/auth")
-public class AuthenticationController {
+record AuthenticationController(AuthenticationService authenticationService) {
+
     @GetMapping("/login")
     public ResponseEntity<String> login(RegisterAndLoginRequest loginRequest) {
         return ResponseEntity.ok("");
