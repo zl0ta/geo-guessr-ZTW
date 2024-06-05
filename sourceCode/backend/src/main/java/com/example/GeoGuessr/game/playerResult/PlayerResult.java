@@ -1,7 +1,7 @@
 package com.example.GeoGuessr.game.playerResult;
 
 import com.example.GeoGuessr.game.room.Room;
-import com.example.GeoGuessr.user.User;
+import com.example.GeoGuessr.user.domain.User;
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -54,19 +54,6 @@ const RegisterForm = ({ onSubmit }: RegisterFormProps) => {
               <div className="space-y-5">
                 <FormField
                   control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <Input placeholder="voportno@gmail.com" {...field} />
-                      </FormControl>
-                      <FormMessage/>
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
                   name="username"
                   render={({ field }) => (
                     <FormItem>
