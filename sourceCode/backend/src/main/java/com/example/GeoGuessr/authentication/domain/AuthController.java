@@ -6,7 +6,7 @@ import com.example.GeoGuessr.authentication.dto.RegisterRequest;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping("/api")
 public record AuthController(AuthService authService) {

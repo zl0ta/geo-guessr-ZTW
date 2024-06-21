@@ -5,7 +5,7 @@ import path from "path"
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    port: 8080,
+    port: 8081,
     proxy: {
         '/api': {
             target: 'http://localhost:8081',
@@ -15,7 +15,7 @@ export default defineConfig({
     },
     strictPort: true,
     host: true,
-    origin: "http://0.0.0.0:8080",
+    origin: "http://0.0.0.0:8081",
   },
   base: "/",
   plugins: [react()],
@@ -25,7 +25,7 @@ export default defineConfig({
     },
   },
   preview: {
-    port: 8080,
+    port: 8081,
     strictPort: true,
   },
 })
